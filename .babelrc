@@ -1,0 +1,9 @@
+{
+  "ignore": [
+    "*.test.js"
+  ],
+  "presets": [
+    "env",
+    "stage-0"
+  ]
+}

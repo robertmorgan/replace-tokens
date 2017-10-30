@@ -1,0 +1,40 @@
+{
+  "name": "replace-tokens",
+  "version": "0.0.1",
+  "description": "Replaces tokens in a string using key value pairs.",
+  "main": "lib/index.min.js",
+  "scripts": {
+    "build": "babel src -d lib && npm run compress",
+    "compress": "uglifyjs ./lib/index.js -c -m -o ./lib/index.min.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertmorgan/replace-tokens.git"
+  },
+  "keywords": [
+    "token",
+    "replace"
+  ],
+  "author": "Rob Morgan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertmorgan/replace-tokens/issues"
+  },
+  "homepage": "https://github.com/robertmorgan/replace-tokens#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "jest": "^21.2.1"
+  },
+  "jest": {
+    "roots": [
+      "src"
+    ],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
+}
